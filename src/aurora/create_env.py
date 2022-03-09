@@ -1,6 +1,8 @@
 import venv
 import os.path
 import os
+import sys
+import subprocess
 
 
 class EnvCreationError(Exception):
@@ -86,3 +88,7 @@ class BuildEnv(venv.EnvBuilder):
         if self.upgrade and self.clear:
             raise ValueError("Cannot use clear and upgrade together.")
         
+
+    def post_setup(self, context):
+        for i in self.requirements:
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', i])
