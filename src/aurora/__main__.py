@@ -16,7 +16,7 @@ def create_env(path, with_pip, system_site_packages, prompt, clear, upgrade, upg
     builder.apply()
     builder.create(path)
 
-
+positive = ['yes', 'true', 'allow', 'y']
 path = os.getcwd()
 with_pip = True
 system_site_packages = False
@@ -44,7 +44,14 @@ else:
     if opt == 1:
         aurora.pipfile.execute(os.path.join(path, 'Pipfile'))
     elif opt == 2:
-        pass
+        if (input("Install pip? Yes/No").lower() in positive):
+            with_pip = True
+        else:
+            with_pip = False
+        if input("Upgrade dependencies? Yes/No").lower() not in positive:
+            upgrade_deps
+        if input("Use --upgrade flag for venv creation? Yes/No").lower() in positive:
+            upgrade = True
     elif opt == 3:
         print("Exiting.")
     else:
