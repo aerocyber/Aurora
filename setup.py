@@ -4,10 +4,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Aurora",
-    version="0.0.1",
+    name="Aurora-conf",
+    version="0.0.2",
     author="aerocyber",
-    description="A tool to share python environment by building it from scratich on target machines.",
+    description="A tool to share python environment by building it from scratch on target machines.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/aerocyber/Aurora/",
