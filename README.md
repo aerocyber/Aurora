@@ -1,2 +1,47 @@
 # Aurora
-A python environment manager written purely in Python. Requires Python 3.9 or higher.
+
+A python environment manager written purely in Python. Requires Python 3.6 or higher.
+
+## Why the name
+
+Aurora is the most beautiful light show on Earth that can be seen in the Arctic Circle.
+Like the Aurora, the Aurora project tries to be a beautiful and easy to manage project management tool for Python.
+
+## Docs
+
+### *Not ready... yet*
+
+### Install
+
+```bash
+pip install Aurora-conf
+```
+
+## LICENSE
+
+The permissive MIT License covers this project!
+
+```text
+MIT License
+
+Copyright (c) 2022 aerocyber
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+```

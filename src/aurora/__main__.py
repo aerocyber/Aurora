@@ -42,7 +42,8 @@ except:
     print("Exiting. To run, rerun!")
 else:
     if opt == 1:
-        aurora.pipfile.execute(os.path.join(path, 'Pipfile'))
+        PyFile = aurora.PyFile(os.path.join(path, 'Pyfile'))
+        PyFile.exec()
     elif opt == 2:
         if (input("Install pip? Yes/No").lower() in positive):
             with_pip = True

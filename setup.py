@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="Aurora-conf",
-    version="0.0.2",
+    version="0.0.3",
     author="aerocyber",
     description="A tool to share python environment by building it from scratch on target machines.",
     long_description=long_description,
@@ -21,5 +21,5 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.9",
+    python_requires=">=3.6",
 )
